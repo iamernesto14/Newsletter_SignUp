@@ -12,30 +12,31 @@
 
 
 </head>
-<body>
+<body class="flex flex-col items-center min-h-screen">
 
-  <main>
-    <div>
-      <div><img src="./assets/images/illustration-sign-up-mobile.svg" alt=""></div>
-    </div>
-    
-    <div class="bg-red-500">
-      <h1>Stay updated!</h1>
-      <div>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li><img src="./assets/images/icon-list.svg" alt=""> Product discovery and building what matters</li>  
-          <li><img src="./assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success</li>  
-          <li><img src="./assets/images/icon-list.svg" alt=""> And much more!</li>  
-        </ul>
-      </div>
+  <main class="bg-green-600">
 
-      <div>
+    <div class="max-w-sm rounded overflow-hidden">
+      <img class="w-full" src="../assets/images/illustration-sign-up-mobile.svg" alt="Sunset in the mountains">
+      <div class="px-6 py-4 flex flex-col gap-5">
+        <h1 class="font-bold text-2xl mb-2">Stay Updated!</h1>
         <div>
-          <label for="">Email address</label>
-        `<input type="text" placeholder="email@company.com" required>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="flex flex-col gap-3">
+            <li class="flex items-start gap-3"><img src="../assets/images/icon-list.svg" alt=""> Product discovery and building what matters</li>  
+            <li class="flex items-start gap-3"><img src="../assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success</li>  
+            <li class="flex items-start gap-3"><img src="../assets/images/icon-list.svg" alt=""> And much more!</li>  
+          </ul>
         </div>
-        <button>Subscribe to monthly newsletter</button>
+
+        <div>
+          <div class="flex flex-col mb-4">
+            <label for="">Email address</label>
+            <input type="text" class="p-3 rounded-lg mt-3" placeholder="email@company.com" required>
+          </div>
+          <button class="bg-red-600 text-center w-full rounded-lg px-4 py-3">Subscribe to monthly newsletter</button>
+        </div>
+
       </div>
     </div>
   </main>
@@ -49,19 +50,19 @@
   
 
 
-
+<!-- 
   Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
+  Dismiss message -->
 
   <!-- Success message end -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ernest Anokye</a>.
-  </div>
+  </div> -->
 </body>
 </html>
