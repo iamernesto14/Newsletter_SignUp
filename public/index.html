@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <!-- Tailwindcss link -->
-<link rel="stylesheet" href="./styles.css">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Tailwindcss link -->
+    <link rel="stylesheet" href="./styles.css" />
 
-
-</head>
-<body class="flex flex-col items-center min-h-screen">
-
-  <main class="bg-green-600">
-
-    <div class="max-w-sm rounded overflow-hidden">
-      <img class="w-full" src="../assets/images/illustration-sign-up-mobile.svg" alt="Sunset in the mountains">
-      <div class="px-6 py-4 flex flex-col gap-5">
-        <h1 class="font-bold text-2xl mb-2">Stay Updated!</h1>
-        <div>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul class="flex flex-col gap-3">
-            <li class="flex items-start gap-3"><img src="../assets/images/icon-list.svg" alt=""> Product discovery and building what matters</li>  
-            <li class="flex items-start gap-3"><img src="../assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success</li>  
-            <li class="flex items-start gap-3"><img src="../assets/images/icon-list.svg" alt=""> And much more!</li>  
-          </ul>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body class="flex flex-col items-center">
+    <main class="min-h-screen">
+      <div class="max-w-sm rounded h-screen">
+        <div class="w-full h-[200px] overflow-hidden">
+          <img
+            class="w-full h-full object-cover rounded-b-2xl overflow-hidden"
+            src="../assets/images/illustration-sign-up-mobile.svg"
+            alt="Sunset in the mountains"
+          />
         </div>
-
-        <div>
-          <div class="flex flex-col mb-4">
-            <label for="">Email address</label>
-            <input type="text" class="p-3 rounded-lg mt-3" placeholder="email@company.com" required>
+        <div class="px-6 py-4 flex flex-col gap-5">
+          <h1 class="font-bold text-3xl mb-2">Stay Updated!</h1>
+          <div>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="flex flex-col gap-3 mt-3">
+              <li class="flex items-start gap-3">
+                <img src="../assets/images/icon-list.svg" alt="" /> Product
+                discovery and building what matters
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="../assets/images/icon-list.svg" alt="" /> Measuring to
+                ensure updates are a success
+              </li>
+              <li class="flex items-start gap-3">
+                <img src="../assets/images/icon-list.svg" alt="" /> And much
+                more!
+              </li>
+            </ul>
           </div>
-          <button class="bg-red-600 text-center w-full rounded-lg px-4 py-3">Subscribe to monthly newsletter</button>
+
+          <div>
+            <div class="flex flex-col mb-4">
+              <label for="">Email address</label>
+              <input
+                type="text"
+                class="p-3 rounded-lg mt-3 border border-gray-500"
+                placeholder="email@company.com"
+                required
+              />
+            </div>
+            <button class="bg-red-600 text-center w-full rounded-lg px-4 py-3">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
         </div>
-
       </div>
-    </div>
-  </main>
+    </main>
 
-  
-
-  
-
-  
-  
-  
-
-
-<!-- 
+    <!-- 
   Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
@@ -58,11 +74,11 @@
 
   Dismiss message -->
 
-  <!-- Success message end -->
-  
-  <!-- <div class="attribution">
+    <!-- Success message end -->
+
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ernest Anokye</a>.
   </div> -->
-</body>
+  </body>
 </html>
