@@ -18,19 +18,19 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body class="flex flex-col items-center">
-    <main class="min-h-screen">
-      <div class="max-w-sm rounded h-screen">
-        <div class="w-full h-[200px] overflow-hidden">
+  <body class="h-screen flex flex-col">
+    <main class="h-screen">
+      <div class="flex flex-col gap-10 rounded h-screen">
+        <div class="w-full overflow-hidden">
           <img
             class="w-full h-full object-cover rounded-b-2xl overflow-hidden"
             src="../assets/images/illustration-sign-up-mobile.svg"
             alt="Sunset in the mountains"
           />
         </div>
-        <div class="px-6 py-4 flex flex-col gap-5">
-          <h1 class="font-bold text-3xl mb-2">Stay Updated!</h1>
-          <div>
+        <div class="px-6 py-4 flex flex-col gap-5 text-secondary-charcoal-grey">
+          <h1 class="font-bold text-4xl mb-2">Stay Updated!</h1>
+          <div class="font-semibold">
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
             <ul class="flex flex-col gap-3 mt-3">
               <li class="flex items-start gap-3">
@@ -50,7 +50,7 @@
 
           <div>
             <div class="flex flex-col mb-4">
-              <label for="">Email address</label>
+              <label for="email" class="font-semibold text-secondary-charcoal-grey">Email address</label>
               <input
                 type="text"
                 class="p-3 rounded-lg mt-3 border border-gray-500"
@@ -58,11 +58,24 @@
                 required
               />
             </div>
-            <button class="bg-red-600 text-center w-full rounded-lg px-4 py-3">
+            <button class="bg-secondary-charcoal-grey text-center text-secondary-white font-semibold w-full rounded-lg px-4 py-3 cursor-pointer">
               Subscribe to monthly newsletter
             </button>
           </div>
         </div>
+      </div>
+
+      <!-- Success message -->
+      <div class="min-h-screen hidden flex-col justify-between px-5 items-center">
+        <div class="flex flex-col gap-6 mt-24">
+          <div><img src="../assets/images/icon-success.svg" alt=""></div>
+          <h2 class="font-bold text-4xl text-secondary-charcoal-grey">Thanks for subscribing!</h2>
+          <p class="text-secondary-charcoal-grey font-semibold">A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+          Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <button class="bg-secondary-charcoal-grey text-center text-white w-full rounded-lg px-4 py-3 mb-10 cursor-pointer hover:bg-primary-tomato hover:shadow-2xl">
+          Dismiss message
+        </button>
       </div>
     </main>
 
