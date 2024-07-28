@@ -18,19 +18,26 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body class="h-screen flex flex-col">
-    <main class="h-screen">
-      <div class="flex flex-col gap-10 rounded h-screen">
-        <div class="w-full overflow-hidden">
+  <body class="h-screen flex flex-col md:bg-secondary-dark-slate-grey md:justify-center md:items-center">
+    <main class="md:max-h-[500px] md:bg-secondary-white md:max-w-[800px] md:mx-auto md:rounded-2xl md:overflow-hidden md:p-3">
+
+      <div class="flex flex-col md:flex-row-reverse h-full">
+        <div class="w-full md:w-1/2">
           <img
-            class="w-full h-full object-cover rounded-b-2xl overflow-hidden"
+            class="w-full h-full object-cover md:hidden"
             src="../assets/images/illustration-sign-up-mobile.svg"
             alt="Sunset in the mountains"
           />
+          <img
+            class="w-full h-full object-cover md:rounded-xl hidden md:block"
+            src="../assets/images/illustration-sign-up-desktop.svg"
+            alt="Sunset in the mountains"
+          />
         </div>
-        <div class="px-6 py-4 flex flex-col gap-5 text-secondary-charcoal-grey">
+        
+        <div class="p-6 flex flex-col gap-5 md:gap-3 text-secondary-charcoal-grey w-full md:w-1/2 md:justify-center">
           <h1 class="font-bold text-4xl mb-2">Stay Updated!</h1>
-          <div class="font-semibold">
+          <div class="font-semibold text-sm">
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
             <ul class="flex flex-col gap-3 mt-3">
               <li class="flex items-start gap-3">
@@ -53,12 +60,12 @@
               <label for="email" class="font-semibold text-secondary-charcoal-grey">Email address</label>
               <input
                 type="text"
-                class="p-3 rounded-lg mt-3 border border-gray-500"
+                class="p-3 rounded-lg mt-3 border border-secondary-grey focus:outline focus:outline-secondary-charcoal-grey cursor-pointer focus:border-none"
                 placeholder="email@company.com"
                 required
               />
             </div>
-            <button class="bg-secondary-charcoal-grey text-center text-secondary-white font-semibold w-full rounded-lg px-4 py-3 cursor-pointer">
+            <button class="bg-secondary-charcoal-grey text-center text-secondary-white font-semibold w-full rounded-lg px-4 py-3 cursor-pointer hover:bg-primary-tomato">
               Subscribe to monthly newsletter
             </button>
           </div>
@@ -66,32 +73,17 @@
       </div>
 
       <!-- Success message -->
-      <div class="min-h-screen hidden flex-col justify-between px-5 items-center">
-        <div class="flex flex-col gap-6 mt-24">
+      <div class="min-h-screen hidden flex-col justify-between md:justify-center md:min-h-full md:max-w-[370px] md:gap-4 px-5 items-center">
+        <div class="flex flex-col gap-6 mt-24 md:mt-5">
           <div><img src="../assets/images/icon-success.svg" alt=""></div>
-          <h2 class="font-bold text-4xl text-secondary-charcoal-grey">Thanks for subscribing!</h2>
-          <p class="text-secondary-charcoal-grey font-semibold">A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+          <h2 class="font-bold text-4xl md:text-3xl text-secondary-charcoal-grey">Thanks for subscribing!</h2>
+          <p class="text-secondary-charcoal-grey font-semibold md:text-xs">A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
           Please open it and click the button inside to confirm your subscription.</p>
         </div>
-        <button class="bg-secondary-charcoal-grey text-center text-white w-full rounded-lg px-4 py-3 mb-10 cursor-pointer hover:bg-primary-tomato hover:shadow-2xl">
+        <button class="bg-secondary-charcoal-grey text-center text-secondary-white w-full rounded-lg px-4 py-3 mb-10 md:mb-5 cursor-pointer text-sm hover:bg-primary-tomato hover:shadow-2xl">
           Dismiss message
         </button>
       </div>
     </main>
-
-    <!-- 
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-    <!-- Success message end -->
-
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ernest Anokye</a>.
-  </div> -->
   </body>
 </html>
