@@ -13,7 +13,8 @@
     />
     <!-- Tailwindcss link -->
     <link rel="stylesheet" href="./styles.css" />
-
+    <!-- JavaScript link -->
+    <script defer src="./script.js"></script>
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -21,7 +22,7 @@
   <body class="h-screen flex flex-col md:bg-secondary-dark-slate-grey md:justify-center md:items-center">
     <main class="md:max-h-[500px] md:bg-secondary-white md:max-w-[800px] md:mx-auto md:rounded-2xl md:overflow-hidden md:p-3">
 
-      <div class="flex flex-col md:flex-row-reverse h-full">
+      <div id="update" class="flex flex-col md:flex-row-reverse h-full">
         <div class="w-full md:w-1/2">
           <img
             class="w-full h-full object-cover md:hidden"
@@ -35,7 +36,7 @@
           />
         </div>
         
-        <div class="p-6 flex flex-col gap-5 md:gap-3 text-secondary-charcoal-grey w-full md:w-1/2 md:justify-center">
+        <div class="p-6 flex flex-col gap-5 md:gap-6 text-secondary-charcoal-grey w-full md:w-1/2 md:justify-center">
           <h1 class="font-bold text-4xl mb-2">Stay Updated!</h1>
           <div class="font-semibold text-sm">
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -57,15 +58,19 @@
 
           <div>
             <div class="flex flex-col mb-4">
-              <label for="email" class="font-semibold text-secondary-charcoal-grey">Email address</label>
+              <div class="font-semibold text-secondary-charcoal-grey flex justify-between text-xs">
+                <label for="email">Email address</label>
+                <p class="valid text-primary-tomato hidden">Valid email required</p>
+              </div>
               <input
-                type="text"
-                class="p-3 rounded-lg mt-3 border border-secondary-grey focus:outline focus:outline-secondary-charcoal-grey cursor-pointer focus:border-none"
+                type="email"
+                id="email"
+                class="p-3 rounded-lg mt-3 border border-secondary-grey focus:outline focus:outline-secondary-charcoal-grey cursor-pointer focus:border-none bg-white"
                 placeholder="email@company.com"
                 required
               />
             </div>
-            <button class="bg-secondary-charcoal-grey text-center text-secondary-white font-semibold w-full rounded-lg px-4 py-3 cursor-pointer hover:bg-primary-tomato">
+            <button class="btn bg-secondary-charcoal-grey text-center text-secondary-white font-semibold w-full rounded-lg px-4 py-3 cursor-pointer hover:bg-primary-tomato" id="subscribeButton">
               Subscribe to monthly newsletter
             </button>
           </div>
@@ -73,14 +78,14 @@
       </div>
 
       <!-- Success message -->
-      <div class="min-h-screen hidden flex-col justify-between md:justify-center md:min-h-full md:max-w-[370px] md:gap-4 px-5 items-center">
+      <div class="success min-h-screen hidden flex-col justify-between md:justify-center md:min-h-full md:max-w-[370px] md:gap-4 px-5 items-center">
         <div class="flex flex-col gap-6 mt-24 md:mt-5">
           <div><img src="../assets/images/icon-success.svg" alt=""></div>
           <h2 class="font-bold text-4xl md:text-3xl text-secondary-charcoal-grey">Thanks for subscribing!</h2>
           <p class="text-secondary-charcoal-grey font-semibold md:text-xs">A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
           Please open it and click the button inside to confirm your subscription.</p>
         </div>
-        <button class="bg-secondary-charcoal-grey text-center text-secondary-white w-full rounded-lg px-4 py-3 mb-10 md:mb-5 cursor-pointer text-sm hover:bg-primary-tomato hover:shadow-2xl">
+        <button class="btn bg-secondary-charcoal-grey text-center text-secondary-white w-full rounded-lg px-4 py-3 mb-10 md:mb-5 cursor-pointer text-sm hover:bg-primary-tomato hover:shadow-2xl">
           Dismiss message
         </button>
       </div>
