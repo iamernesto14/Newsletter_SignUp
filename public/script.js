@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
           emailInput.focus();
       } else {
           emailInput.classList.remove("bg-red-300", "text-primary-tomato", "border-primary-tomato", "focus:outline-primary-tomato");
-          emailInput.classList.add("bg-white", "border-secondary-grey", "focus:outline-secondary-charcoal-grey");
+          emailInput.classList.add("bg-white", "border-secondary-grley", "focus:outline-secondary-charcoal-grey");
           validEmailMessage.classList.add('hidden');
           validEmailMessage.classList.remove('block');
           
@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   }
 
-  subscribeButton.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent form submission to handle validation
+  subscribeButton.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent form submission to handle validation
       validate();
   });
 
